@@ -46,3 +46,18 @@ function detective(){
 };
 
 //    window.alert("sometext");
+
+function sendMessage() {
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1233528241441079408/oGQngHNOr4LAdieqpmQFKiO5NO1_lvaqBwCEL64RLIivfJSG4IrS_1JpZiM1c6UWa3SI"); //ADD WEBHOOK HERE!!!
+    request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+      username: "Emoji Watcher",
+      avatar_url: "",
+      content: `someone is on the website 👀`
+    }
+  
+    request.send(JSON.stringify(params));
+  }
+
+  sendMessage();
