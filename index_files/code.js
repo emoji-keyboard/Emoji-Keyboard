@@ -45,6 +45,12 @@ function detective(){
     audio.play();
 };
 
+function cool(){
+    var audio = new Audio('index_files/cool.mp3');
+    audio.play();
+//smiling-face-with-sunglasses_1f60e.png
+};
+
 //    window.alert("sometext");
 
 function sendMessage() {
